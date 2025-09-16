@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zwear Streetwear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #fff;
+            color: #111;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #f00;
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/1600x600/?streetwear,hoodie') center/cover no-repeat;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-shadow: 2px 2px 6px #000;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            letter-spacing: 3px;
+        }
+
+        .section {
+            padding: 60px 40px;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            padding: 10px 0;
+        }
+
+        .product-card p {
+            padding-bottom: 10px;
+            color: #555;
+        }
+
+        .about, .contact {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 20px auto 0;
+        }
+
+        .contact input, .contact textarea {
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            padding: 12px;
+            border: none;
+            background-color: #000;
+            color: #fff;
+            font-weight: 700;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .contact button:hover {
+            background-color: #f00;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Zwear</h1>
+        <nav>
+            <a href="#products">Produkte</a>
+            <a href="#about">Über uns</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Streetwear, die deinen Style definiert</h2>
+    </section>
+
+    <section class="section" id="products">
+        <h2>Unsere Produkte</h2>
+        <div class="products">
+            <div class="product-card">
+                <img src="https://source.unsplash.com/400x400/?hoodie,black" alt="Hoodie Schwarz">
+                <h3>Schwarzer Hoodie</h3>
+                <p>35 €</p>
+            </div>
+            <div class="product-card">
+                <img src="https://source.unsplash.com/400x400/?tshirt,streetwear" alt="T-Shirt Weiß">
+                <h3>Weißes T-Shirt</h3>
+                <p>20 €</p>
+            </div>
+            <div class="product-card">
+                <img src="https://source.unsplash.com/400x400/?cap,streetwear" alt="Cap">
+                <h3>Coole Cap</h3>
+                <p>15 €</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <h2>Über Zwear</h2>
+        <div class="about">
+            <p>Zwear ist eine Streetwear-Marke, die für alle gemacht ist, die ihren eigenen Style leben. Unsere Produkte sind schlicht, hochwertig und perfekt für den Alltag. Wir designen jedes Teil mit Liebe zum Detail und einem Fokus auf minimalistische, moderne Ästhetik.</p>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>Kontakt</h2>
+        <div class="contact">
+            <p>Schreib uns eine Nachricht, um Bestellungen aufzugeben oder Fragen zu stellen:</p>
+            <form>
+                <input type="text" placeholder="Dein Name" required>
+                <input type="email" placeholder="Deine E-Mail" required>
+                <textarea rows="5" placeholder="Deine Nachricht" required></textarea>
+                <button type="submit">Absenden</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Zwear | Alle Rechte vorbehalten
+    </footer>
+
+</body>
+</html>
