@@ -209,3 +209,38 @@
 
 </body>
 </html>
+
+<section class="section" id="products">
+    <h2>Unsere Produkte</h2>
+    <div class="products">
+        <div class="product-card">
+            <img src="https://source.unsplash.com/400x400/?hoodie,black" alt="Hoodie Schwarz">
+            <h3>Schwarzer Hoodie</h3>
+            <p>35 €</p>
+            <form action="mailto:deineemail@example.com" method="post" enctype="text/plain">
+                <label>Größe:
+                    <select name="Größe">
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                </label>
+                <label>Menge:
+                    <input type="number" name="Menge" value="1" min="1">
+                </label>
+                <label>Name:
+                    <input type="text" name="Name" required>
+                </label>
+                <label>E-Mail:
+                    <input type="email" name="E-Mail" required>
+                </label>
+                <label>Nachricht:
+                    <textarea name="Nachricht"></textarea>
+                </label>
+                <button type="submit">Bestellen</button>
+            </form>
+        </div>
+        <!-- Weitere Produkte nach dem gleichen Muster -->
+    </div>
+</section>
